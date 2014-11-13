@@ -20,6 +20,7 @@ res_dirs := res \
 LOCAL_SRC_FILES := $(call all-java-files-under, $(src_dirs))
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dirs)) \
     frameworks/support/v7/cardview/res frameworks/support/v7/recyclerview/res
+LOCAL_ASSET_DIR += $(LOCAL_PATH)/assets
 
 LOCAL_AAPT_FLAGS := \
     --auto-add-overlay \
@@ -30,6 +31,7 @@ LOCAL_AAPT_FLAGS := \
     --extra-packages com.android.phone.common
 
 LOCAL_JAVA_LIBRARIES := telephony-common \
+                        org.apache.http.legacy \
                         ims-common
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
