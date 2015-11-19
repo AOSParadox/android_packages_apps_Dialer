@@ -33,7 +33,6 @@ LOCAL_AAPT_FLAGS := \
     --extra-packages com.android.phone.common
 
 LOCAL_JAVA_LIBRARIES := telephony-common \
-                        org.apache.http.legacy \
                         ims-common
 
 LOCAL_JAVA_LIBRARIES += rcs_service_api
