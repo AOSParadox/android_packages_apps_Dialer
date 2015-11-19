@@ -87,8 +87,6 @@
         <meta-data android:name="com.google.android.backup.api_key"
             android:value="AEdPqrEAAAAIBXgtCEKQ6W0PXVnW-ZVia2KmlV2AxsTw3GjAeQ" />
 
-        <uses-library android:name="org.apache.http.legacy" />
-
         <!--add for RCS -->
         <uses-library android:name="com.suntek.mway.rcs.client.api" android:required="false" />
         <!-- The entrance point for Phone UI.
@@ -326,7 +324,6 @@
             </intent-filter>
         </service>
 
-<<<<<<< HEAD
         <activity android:name=".SpeedDialListActivity"
             android:theme="@style/DialtactsTheme"
             android:label="@string/speed_dial_settings" >
@@ -334,12 +331,11 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-=======
+
         <provider android:name="com.android.dialer.lookup.LookupProvider"
                   android:authorities="com.android.dialer.provider"
                   android:exported="false"
                   android:multiprocess="false" />
 
->>>>>>> 1316988... Dialer lookup.
     </application>
 </manifest>
